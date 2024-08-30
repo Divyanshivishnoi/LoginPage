@@ -18,7 +18,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
 
-  const postUrl = "http://localhost:8080/auth/Signup";
+  const postUrl = `${process.env.REACT_APP_BACKEND_URL}/auth/Signup`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
