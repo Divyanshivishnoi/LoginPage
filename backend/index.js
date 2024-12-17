@@ -6,10 +6,10 @@ require('dotenv').config();
 require('./Models/db');
 const AuthRouter = require('./Routes/AuthRouter')
 
+const PORT= 8000;
 
 
-
-const PORT= process.env.PORT;
+// const PORT= process.env.PORT;
 
 app.get('/ping', (req,res) =>{
     res.send('PONG');
